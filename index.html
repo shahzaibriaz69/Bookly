@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
     <link
@@ -16,79 +16,73 @@
     <link rel="stylesheet" href="style.css" />
     <title>Bookly</title>
   </head>
+
   <body>
     <header>
-      <div class="header-container">
+      <div class="topbar-container">
         <div class="header-content">
-          <div class="text-start">
-            <p>
-              Need any help? Call us
-              <a href="#">+923075159107</a>
-            </p>
-          </div>
+          <p>
+            Need any help? Call us
+            <a href="#">+923075159107</a>
+          </p>
 
-          <div class="text-center">
-            <p>
-              Summer sale discount off 60% off!
-              <a href=" Shop Now">Shop Now</a>
-            </p>
+          <p>
+            Summer sale discount off 60% off!
+            <a href=" Shop Now">Shop Now</a>
+          </p>
+          <p>2-3 business days delivery & free returns</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="navbar">
+          <div class="nav-logo">
+            <img src="main-logo.png" alt="Logo" />
           </div>
-          <div class="text-end">
-            <p>2-3 business days delivery & free returns</p>
+          <div class="nav-item">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Get Pro</a></li>
+            </ul>
+          </div>
+          <div class="nav-icon">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </header>
-    <div class="navbar">
-      <div class="navbar-container">
-        <div class="nav-logo">
-          <img src="main-logo.png" alt="Logo" />
-        </div>
-        <div class="nav-item">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Get Pro</a></li>
-          </ul>
-        </div>
-        <div class="nav-icon">
-          <ul>
-            <li>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-user"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-heart"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="hero-section">
-      <div class="hero-section-matrial">
+
+    <section class="hero-section">
+      <div class="container hero-section-matrial">
         <div class="hero-section-content">
           <h2>The Fine Print Book Collection</h2>
           <p>Best Offer Save 30%. Grab it now!</p>
           <button>Shop Now</button>
         </div>
-        <div class="hero-section-img">
-          <div class="img-section">
-            <img src="banner-image2.png" alt="" />
-          </div>
+        <div class="img-section">
+          <img src="banner-image2.png" alt="" />
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="company-services">
+    <section class="container">
       <div class="companny-container">
         <div class="company-services-content">
           <div>
@@ -122,6 +116,65 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="container" style="height: 70vh">
+      <div class="title-section">
+        <h2>Best Selling Items</h2>
+        <button>View All</button>
+      </div>
+      <div class="slider">
+        <div class="card">
+          <div>
+            <img src="product-item1.png" alt="card-img" />
+          </div>
+          <div>
+            <a href="#"><h2>House of Sky Breath</h2></a>
+            <p>Lauren Asher</p>
+            <a href=""><h5>$870</h5></a>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="product-item1.png" alt="card-img" />
+          </div>
+          <div>
+            <a href="#"><h2>House of Sky Breath</h2></a>
+            <p>Lauren Asher</p>
+            <a href=""><h5>$870</h5></a>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="product-item1.png" alt="card-img" />
+          </div>
+          <div>
+            <a href="#"><h2>House of Sky Breath</h2></a>
+            <p>Lauren Asher</p>
+            <a href=""><h5>$870</h5></a>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="product-item1.png" alt="card-img" />
+          </div>
+          <div>
+            <a href="#"><h2>House of Sky Breath</h2></a>
+            <p>Lauren Asher</p>
+            <a href=""><h5>$870</h5></a>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="product-item1.png" alt="card-img" />
+          </div>
+          <div>
+            <a href="#"><h2>House of Sky Breath</h2></a>
+            <p>Lauren Asher</p>
+            <a href=""><h5>$870</h5></a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

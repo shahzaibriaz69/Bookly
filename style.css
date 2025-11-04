@@ -1,28 +1,38 @@
 * {
-  margin: auto;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 :root {
   --primary-color: #f86d72;
 }
-.header-container {
+
+.container {
+  max-width: 1540px;
+  margin: 0 auto;
+}
+
+.topbar-container {
   width: 100%;
   background-color: #f8f8f8;
-  padding: 10px 0;
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* max-width: 1400px;               */
-  margin: 10px auto;
-  padding: 0 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 8px 0;
   font-size: 16px;
   color: rgb(67, 62, 62);
+  max-width: 1650px;
 }
-
+.header-content p {
+  font-weight: 300;
+  font-size: 16px;
+}
 a {
   color: black;
   text-decoration: none;
@@ -33,19 +43,14 @@ a:hover {
 }
 
 .navbar {
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-}
-
-.navbar-container {
-  /* max-width: 1200px; */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 15px 30px !important;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 0;
 }
 
 li {
@@ -57,7 +62,7 @@ li {
   justify-content: center;
   align-items: center;
   padding: 0px 0px;
-  gap: 30px;
+  gap: 40px;
 }
 
 .nav-icon {
@@ -78,16 +83,20 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-section-matrial {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero-section-content {
   font-size: 20px;
   font-weight: 400;
-  margin-left: 15rem !important;
 }
 .hero-section-content h2 {
   max-width: 650px;
@@ -117,24 +126,13 @@ button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-.hero-section-img {
-  padding-right: 25rem;
-  margin-top: 5rem;
-}
-
-.company-services {
-  background-color: #f9f9f9;
-  padding: 60px 0;
-}
-
 .companny-container {
-  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  padding: 0 30px;
+  padding: 100px 0;
 }
 
 .company-services-content {
@@ -158,4 +156,67 @@ button:hover {
   font-size: 18px;
   font-weight: 400;
   color: rgb(52, 52, 57);
+}
+
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title-section h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.title-section button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 2.5rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.title-section button:hover {
+  background-color: #000000;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card {
+  border: 1px solid #e3e3e3;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.card div:nth-child(1) {
+  width: 250px;
+  height: auto;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card div:nth-child(2) a h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.card div:nth-child(2) p {
+  color: pink;
+}
+.card div:nth-child(2) {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
