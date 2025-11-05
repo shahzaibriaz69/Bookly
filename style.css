@@ -372,3 +372,58 @@ hr {
   padding: 8px 16px;
   border-radius: 10px;
 }
+
+.customer-review {
+  background-image: url(banner-image-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.review-title h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.review-card {
+  background: white;
+  border-radius: 10px;
+  max-width: 1000px;
+  padding: 60px;
+  text-align: left;
+  margin: 0 20px;
+}
+.review-card p {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.review-card h3 {
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: 400 !important;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.latest-post {
+  margin-bottom: 4rem;
+}
+
+.post-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-card img {
+  width: 325px;
+  height: 210px;
+}
