@@ -293,6 +293,15 @@ button:hover {
   max-width: 80px;
   max-height: 90px;
 }
+span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+span s {
+  color: #777;
+}
 
 .featured-info h3 {
   font-size: 18px;
