@@ -427,7 +427,7 @@ hr {
 
 .post-section h2 {
   font-size: 2.1rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.5px;
 }
 
@@ -468,11 +468,12 @@ hr {
   letter-spacing: 0.2;
 }
 
-.post-card div:nth-child(2) span a {
+.post-card div:nth-child(2) p a {
   color: #898181;
   text-decoration: underline;
   font-size: 1.2rem;
   font-weight: 250;
+  margin-left: 2px;
 }
 
 .card-slider {
@@ -480,4 +481,35 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.insta-text h3 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.insta-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.post-insta-card {
+  max-width: 233px;
+  max-height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.post-insta-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
