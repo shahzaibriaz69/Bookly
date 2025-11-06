@@ -78,7 +78,7 @@ li {
 }
 
 .hero-section {
-  background-image: url(banner-image-bg.jpg);
+  background-image: url(images/banner-image-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -195,7 +195,7 @@ button:hover {
   border: 1px solid #e3e3e3;
   padding: 2rem 1.5rem;
   border-radius: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
   overflow: hidden;
 }
 .card div:nth-child(1) {
@@ -215,6 +215,7 @@ button:hover {
 .card div:nth-child(2) a h5 {
   font-size: 20px;
   font-weight: 600;
+  color: var(--primary-color);
 }
 
 .card div:nth-child(2) p {
@@ -374,7 +375,7 @@ hr {
 }
 
 .customer-review {
-  background-image: url(banner-image-bg.jpg);
+  background-image: url(images/banner-image-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -421,9 +422,62 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
-.post-card img {
-  width: 325px;
-  height: 210px;
+.post-section h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.post-card {
+  max-width: 530px;
+  max-height: 420px;
+  background: #fff;
+}
+.post-card div:nth-child(1) {
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.post-card div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.post-card div:nth-child(2) h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  margin: 4px 0;
+}
+
+.post-card div:nth-child(2) a h6 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.post-card div:nth-child(2) p {
+  color: #272727;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.2;
+}
+
+.post-card div:nth-child(2) span a {
+  color: #898181;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  font-weight: 250;
+}
+
+.card-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
