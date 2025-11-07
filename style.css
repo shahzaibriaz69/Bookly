@@ -192,6 +192,7 @@ button:hover {
   align-items: center;
   gap: 20px;
 }
+
 .card {
   border: 1px solid #e3e3e3;
   padding: 2rem 1.5rem;
@@ -230,7 +231,7 @@ button:hover {
 }
 
 .limited-offer {
-  background-image: url(banner-image-bg-1.jpg);
+  background-image: url(images/banner-image-bg-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -426,6 +427,10 @@ hr {
   margin-bottom: 2rem;
 }
 
+.post-section a button {
+  padding: 0.75rem 2.625rem;
+}
+
 .post-section h2 {
   font-size: 2.1rem;
   font-weight: 500;
@@ -484,6 +489,10 @@ hr {
   gap: 20px;
 }
 
+.insta-text {
+  margin-bottom: 2rem;
+}
+
 .insta-text h3 {
   font-size: 2.1rem;
   font-weight: 600;
@@ -518,6 +527,8 @@ hr {
 .footer {
   background: #fff;
   color: #444;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
 }
 
 /* .footer-container {
@@ -555,18 +566,30 @@ hr {
   font-size: 1.3rem;
   font-weight: 300;
   color: #000000;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .footer-item a li {
-  font-size: 16px;
+  font-size: 14px;
+  padding: 4px 0;
 }
 
 .footer-contact h6 {
   font-size: 1.3rem;
   font-weight: 300;
-  color: #000000;
   margin-bottom: 1.2rem;
+}
+
+.footer-contact p {
+  font-size: 18px;
+  /* letter-spacing: 1px; */
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.footer-contact a {
+  color: #555;
+  text-decoration: underline;
 }
 
 .footer-bottom {
@@ -587,4 +610,15 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bot-footer-items p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #272727;
+}
+p.footer-text {
+  font-size: 18px;
+  font-weight: 300;
+  color: #272727;
 }
