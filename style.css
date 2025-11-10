@@ -58,12 +58,19 @@ li {
   list-style: none;
 }
 
-.nav-item ul {
+.nav-item .main-menu-list {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 0px;
-  gap: 40px;
+  gap: 28px;
+}
+
+.nav-item ul li a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0px 6px;
+  letter-spacing: 1px;
 }
 
 .nav-icon {
@@ -77,6 +84,46 @@ li {
   padding: 0px 0px;
   gap: 18px;
 }
+.pages-dropdown {
+  position: relative;
+}
+.dropdown_menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: none;
+  z-index: 1000;
+}
+.active {
+  color: var(--primary-color);
+}
+.pages-menu li {
+  padding: 5px 12px;
+  white-space: nowrap;
+  cursor: pointer;
+  width: 190px;
+  color: #676363;
+}
+.pages-menu li:hover {
+  background-color: #f5f5f5;
+}
+
+.pages-menu li span {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 12px;
+  padding: 0px 2px;
+  border-radius: 4px;
+}
+
+/* .pages-dropdown #pages-text:hover + .dropdown_menu,
+.dropdown_menu:hover {
+  display: block;
+} */
 
 .hero-section {
   background-image: url(images/banner-image-bg.jpg);
@@ -149,14 +196,15 @@ button:hover {
   color: var(--primary-color);
 }
 .company-services-content div:nth-child(2) h2 {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 22px;
+  font-weight: 600;
   color: black;
 }
 .company-services-content div:nth-child(2) p {
   font-size: 18px;
-  font-weight: 400;
-  color: rgb(52, 52, 57);
+  font-weight: 285;
+  letter-spacing: 0.01rem;
+  color: #272727;
 }
 
 .title-section {
@@ -337,7 +385,7 @@ hr {
 .category-title h2 {
   font-size: 2.1rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .category-cards {
@@ -404,7 +452,9 @@ hr {
   margin: 0 auto;
 }
 .review-card p {
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 280;
+  color: #272727;
   letter-spacing: 1px;
 }
 
@@ -462,16 +512,16 @@ hr {
 }
 
 .post-card div:nth-child(2) a h6 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .post-card div:nth-child(2) p {
   color: #272727;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 0.2;
+  font-size: 19px;
+  font-weight: 280;
+  letter-spacing: 0.5px;
 }
 
 .post-card div:nth-child(2) p a {
@@ -550,8 +600,8 @@ hr {
 
 .footer-about p {
   color: #555;
-  letter-spacing: 1.6px;
-  font-size: 14px;
+  letter-spacing: 0.01rem;
+  font-size: 18px;
 }
 
 .social-icon a i {
@@ -572,6 +622,7 @@ hr {
 .footer-item a li {
   font-size: 14px;
   padding: 4px 0;
+  color: #272727;
 }
 
 .footer-contact h6 {

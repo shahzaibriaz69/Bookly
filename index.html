@@ -28,7 +28,7 @@
 
           <p>
             Summer sale discount off 60% off!
-            <a href=" Shop Now">Shop Now</a>
+            <a href=" Shop Now" style="text-decoration: underline">Shop Now</a>
           </p>
           <p>2-3 business days delivery & free returns</p>
         </div>
@@ -39,12 +39,35 @@
             <img src="images/main-logo.png" alt="Logo" />
           </div>
           <div class="nav-item">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Contact</a></li>
+            <ul class="main-menu-list">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">BLOGS</a></li>
+              <li>
+                <div class="pages-dropdown">
+                  <a href="#" id="pages-text"
+                    >PAGES <i class="fa-solid fa-caret-down"></i
+                  ></a>
+                  <div class="dropdown_menu">
+                    <ul class="pages-menu">
+                      <li>ABOUT <span> PRO </span></li>
+                      <li>SHOP <span> PRO </span></li>
+                      <li>SINGLE PRODUCT <span> PRO </span></li>
+                      <li>CART <span> PRO </span></li>
+                      <li>CHECKOUT <span> PRO </span></li>
+                      <li>BLOGS <span> PRO </span></li>
+                      <li>SINGLE POST <span> PRO </span></li>
+                      <li>CONTACT <span> PRO </span></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li><a href="#">CONTACT</a></li>
+              <li>
+                <a href="#" style="text-decoration: underline">GET PRO</a>
+              </li>
             </ul>
           </div>
           <div class="nav-icon">
@@ -66,7 +89,6 @@
         </div>
       </div>
     </header>
-    <hr />
 
     <section class="hero-section">
       <div class="container hero-section-matrial">
@@ -343,11 +365,11 @@
         </div>
         <div class="category-card">
           <img src="images/category2.jpg" alt="Romance" />
-          <span class="category-label">Romance</span>
+          <span class="category-label">Lifestyle</span>
         </div>
         <div class="category-card">
           <img src="images/category3.jpg" alt="Romance" />
-          <span class="category-label">Romance</span>
+          <span class="category-label">Recipe</span>
         </div>
       </div>
     </section>
@@ -555,5 +577,6 @@
         </div>
       </div>
     </div>
+    <script src="custom.js"></script>
   </body>
 </html>
