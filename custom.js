@@ -7,3 +7,13 @@ pages_text.addEventListener("click", function (e) {
   dropdown_menu.style.display =
     dropdown_menu.style.display === "block" ? "none" : "block";
 });
+
+let wishlist = document.getElementById("wishlist");
+let wishlist_menu = document.querySelector(".wishlist-menu");
+
+wishlist.addEventListener("click", function (e) {
+  e.preventDefault() ;
+  wishlist.classList.toggle("active");
+  wishlist_menu.style.display =
+    wishlist_menu.style.display === "block" ? "none" : "block";
+})

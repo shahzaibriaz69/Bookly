@@ -73,23 +73,12 @@ li {
   letter-spacing: 1px;
 }
 
-.nav-icon {
-  font-size: 20px;
-}
-
-.nav-icon ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 0px;
-  gap: 18px;
-}
 .pages-dropdown {
   position: relative;
 }
 .dropdown_menu {
   position: absolute;
-  top: 30px;
+  top: 34px;
   left: 0;
   background-color: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -125,6 +114,100 @@ li {
   display: block;
 } */
 
+.nav-icon {
+  font-size: 20px;
+}
+
+.nav-icon ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px;
+  gap: 18px;
+}
+
+.wishlist-dropdown {
+  position: relative;
+}
+
+.wishlist-menu {
+  position: absolute;
+  flex-direction: column;
+  top: 107px;
+  right: 19.3rem;
+  /* left: 0; */
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 10px;
+  display: none;
+  z-index: 1000;
+  gap: 10px;
+  width: 320px;
+}
+
+.wishlist-header h4 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+}
+
+.wishlist-body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.wishlist-body div > span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wishlist-body div {
+  border: 1px solid #e3e3e3;
+  padding: 10px;
+}
+
+.wishlist-body div a {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 0.01rem;
+}
+
+.wishlist-body div span {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+.wishlist-body p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.wishlist-body a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 15px 0 0 0;
+}
+.btn .btn-1,
+.btn .btn-2 {
+  width: 100%;
+}
+
+.wishlist-body label {
+  font-size: 16px;
+  font-weight: 400;
+}
 .hero-section {
   background-image: url(images/banner-image-bg.jpg);
   background-position: center;
