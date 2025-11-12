@@ -126,6 +126,99 @@ li {
   gap: 18px;
 }
 
+/* Modal container */
+.login-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 800px;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* Tab buttons */
+.login-tab {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.login-tab button {
+  flex: 1;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-tab button:hover {
+  color: #007bff;
+}
+
+/* Form styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-form input {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: #007bff;
+}
+
+/* Options (checkbox + forgot password) */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 13px;
+}
+
+.login-options a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-options a:hover {
+  text-decoration: underline;
+}
+
+/* Login button */
+.login-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #0056b3;
+}
+
 .wishlist-dropdown {
   position: relative;
 }
@@ -141,9 +234,9 @@ li {
   border-radius: 6px;
   padding: 10px;
   display: none;
-  z-index: 1000;
+  z-index: 10;
   gap: 10px;
-  width: 320px;
+  width: 360px;
 }
 
 .wishlist-header {
@@ -253,7 +346,7 @@ li {
   position: absolute;
   border: 1px solid #e3e3e3;
   right: 0;
-  top: 8px;
+  top: 10px;
   background-color: #fff;
   border-radius: 10px;
 }

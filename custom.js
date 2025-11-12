@@ -46,3 +46,5 @@ document.addEventListener("click", function (e) {
     cart.classList.remove("active");
   }
 });
+
+
