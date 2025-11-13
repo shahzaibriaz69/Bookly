@@ -28,6 +28,20 @@ cart.addEventListener("click", function (e) {
     main_cart.style.display === "block" ? "none" : "block";
 });
 
+  let modal = document.getElementById("modal");
+  let loginModal = document.querySelector(".modal-container");
+  let modalOverlay  = document.querySelector(".modal-overlay"); 
+  
+  modal.addEventListener("click", function (e) {
+    e.preventDefault();
+    modal.classList.toggle("active");
+    loginModal.style.display =
+    loginModal.style.display === "block"? "none" : "block";
+    modalOverlay.style.display =
+    modalOverlay.style.display === "block"? "none" : "block";
+  });
+
+
 document.addEventListener("click", function (e) {
   // Dropdown
   if (!pages_text.contains(e.target) && !dropdown_menu.contains(e.target)) {
@@ -45,6 +59,37 @@ document.addEventListener("click", function (e) {
     main_cart.style.display = "none";
     cart.classList.remove("active");
   }
+
+  // Login Modal
+  if (!modal.contains(e.target) && !loginModal.contains(e.target)) {
+    loginModal.style.display = "none";
+    modal.classList.remove("active");
+  }
+
+  if (e.target === modalOverlay) {
+    loginModal.style.display = "none";
+    modalOverlay.style.display = "none";
+    modal.classList.remove("active");
+  }
 });
 
 
+// Tab toggle functionality
+let loginTabBtn = document.getElementById("login-tab-btn");
+let registerTabBtn = document.getElementById("register-tab-btn");
+let loginForm = document.getElementById("login-form");
+let registerForm = document.getElementById("register-form");
+
+loginTabBtn.addEventListener("click", function () {
+  loginTabBtn.classList.add("active");
+  registerTabBtn.classList.remove("active");
+  loginForm.style.display = "flex";
+  registerForm.style.display = "none";
+});
+
+registerTabBtn.addEventListener("click", function () {
+  registerTabBtn.classList.add("active");
+  loginTabBtn.classList.remove("active");
+  registerForm.style.display = "flex";
+  loginForm.style.display = "none";
+});
