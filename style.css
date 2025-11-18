@@ -657,6 +657,7 @@ button:hover {
   overflow: hidden;
   position: relative;
 }
+
 .card div:nth-child(1) {
   width: 250px;
   height: auto;
@@ -1005,6 +1006,7 @@ hr {
 }
 
 .post-insta-card {
+  position: relative;
   max-width: 233px;
   max-height: auto;
   border-radius: 12px;
@@ -1017,6 +1019,28 @@ hr {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.insta-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.insta-icon svg {
+  color: rgb(255, 255, 255);
+  width: 25px;
+  height: 25px;
+}
+
+.post-insta-card:hover .insta-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .footer {
