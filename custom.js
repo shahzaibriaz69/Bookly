@@ -93,3 +93,28 @@ registerTabBtn.addEventListener("click", function () {
   registerForm.style.display = "flex";
   loginForm.style.display = "none";
 });
+
+
+let deadline = new Date();
+deadline.setDate(deadline.getDate() + 28); 
+
+let countdown = setInterval(function () {
+  let now = new Date().getTime();
+  let diff = deadline - now;
+
+  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML =
+    days + " : " + 
+    hours + " : " +
+    minutes + " : " +
+    seconds + "";
+
+  if (diff < 0) {
+    clearInterval(countdown);
+    document.getElementById("countdown").innerHTML = "Offer Expired";
+  }
+}, 1000);
