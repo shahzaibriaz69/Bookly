@@ -811,8 +811,8 @@ button:hover {
   max-width: 80px;
   max-height: 90px;
 }
-span {
-  display: flex;
+.featured-item span {
+  display: inline-flex;
   align-items: center;
   gap: 10px;
 }

@@ -95,26 +95,45 @@ registerTabBtn.addEventListener("click", function () {
 });
 
 
-let deadline = new Date();
-deadline.setDate(deadline.getDate() + 28); 
 
-let countdown = setInterval(function () {
+let deadline = new Date("2025-11-20");
+deadline.setDate(deadline.getDate() + 15);
+
+const setTimer = () => {
   let now = new Date().getTime();
   let diff = deadline - now;
+  const diff_date = new Date(diff);
 
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
+  if(!hours) {
+    setTimer();
+    return;
+  }
+
   document.getElementById("countdown").innerHTML =
-    days + " : " + 
-    hours + " : " +
-    minutes + " : " +
+    days + "  <span>:</span> " +   
+    hours + "  <span>:</span> " +
+    minutes + "  <span>:</span> " +
     seconds + "";
 
+     document.querySelectorAll("#countdown span").forEach((span)=>{
+      span.style.color = "orange";
+     });
+}
+
+setTimer();
+
+let countdown = setInterval(function () {
+  let now = new Date().getTime();
+  let diff = deadline - now;
   if (diff < 0) {
     clearInterval(countdown);
     document.getElementById("countdown").innerHTML = "Offer Expired";
+  }else {
+    setTimer();
   }
 }, 1000);
